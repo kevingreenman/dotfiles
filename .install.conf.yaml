@@ -9,6 +9,8 @@
     ~/.vimrc: vimrc
     ~/.vim: vim
     ~/.tmux: tmux
+    ~/.gitconfig: gitconfig
+    ~/.gitignore_global: gitignore_global
 
 - shell:
     - git submodule sync --recursive
