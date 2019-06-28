@@ -61,7 +61,7 @@ set listchars=tab:>>,nbsp:~ " set list to see tabs and non-breakable spaces
 set lbr " line break
 set ruler " show current position in file
 set scrolloff=5 " show lines above and below cursor (when possible)
-set noshowmode " hide mode
+" set noshowmode " hide mode
 set laststatus=2
 set showcmd " show current command
 set backspace=indent,eol,start " allow backspacing over everything
