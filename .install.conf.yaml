@@ -5,9 +5,10 @@
 - clean: ['~']
 
 - link:
-    ~/.tmux.conf: tmux/tmux.conf
+    ~/.tmux.conf: tmux.conf
     ~/.vimrc: vimrc
     ~/.vim: vim
+    ~/.tmux: tmux
 
 - shell:
     - git submodule sync --recursive
