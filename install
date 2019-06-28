@@ -8,7 +8,13 @@ DOTBOT_DIR="dotbot"
 DOTBOT_BIN="bin/dotbot"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+FISH_DST="$HOME/.config/fish"
+
 cd "${BASEDIR}"
+
+# removing the fish dir with bash before installing it with dotbot
+rm -rf $FISH_DIR
+
 git submodule update --init --recursive "${DOTBOT_DIR}"
 
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"

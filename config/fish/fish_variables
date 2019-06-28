@@ -5,7 +5,7 @@ SETUVAR --export LSCOLORS:gxfxbEaEBxxEhEhBaDaCaD
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_init_3_x:\x1d
-SETUVAR bookmarks:/Users/dskoda/Projects/dotfiles/shell/tmux\x1e/Users/dskoda/Projects/dotfiles\x1e/Users/dskoda/Projects\x1e/Users/dskoda/Dropbox\x20\x28MIT\x29/research/references
+SETUVAR bookmarks:/Users/dskoda/Projects/dotfiles\x1e/Users/dskoda/Projects\x1e/Users/dskoda/Dropbox\x20\x28MIT\x29/research/references
 SETUVAR dangerous_colors:000000\x1e333333\x1e666666\x1effffff\x1effff00\x1eff6600\x1eff0000\x1eff0033\x1e3300ff\x1e00aaff\x1e00ffff\x1e00ff00
 SETUVAR dangerous_cursors:\x5c033\x5d12\x3b\x2300aaff\x5c007\x1e\x5c033\x5d12\x3b\x23ffff00\x5c007\x1e\x5c033\x5d12\x3b\x23ff0033\x5c007\x1e\x5c033\x5d12\x3b\x233300ff\x5c007
 SETUVAR dangerous_day:000000\x1e333333\x1e666666\x1effffff\x1effff00\x1eff6600\x1eff0000\x1eff0033\x1e3300ff\x1e00aaff\x1e00ffff\x1e00ff00

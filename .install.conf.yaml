@@ -11,6 +11,8 @@
     ~/.tmux: tmux
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
+    ~/.config/fish: config/fish
+    ~/.config/omf: config/omf
 
 - shell:
     - git submodule sync --recursive
