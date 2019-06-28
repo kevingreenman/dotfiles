@@ -5,7 +5,13 @@
 - clean: ['~']
 
 - link:
-    ~/.tmux.conf: tmux.conf
+    ~/.tmux.conf: tmux/tmux.conf
+    ~/.vimrc: vimrc
+    ~/.vim: vim
 
 - shell:
-    - [git submodule update --init --recursive, Installing submodules] 
+    - git submodule sync --recursive
+    - git submodule update --init --recursive
+    - >
+      git clean -fdx -f
+      vim/bundle/
