@@ -1,0 +1,11 @@
+axes.labelsize: 7
+axes.unicode_minus: False
+axes.titlepad: 8
+axes.titlesize: large
+font.size: 7
+font.family: CMU Sans Serif
+legend.fontsize: 6
+xtick.labelsize: 6
+ytick.labelsize: 6
+text.usetex: False
+mathtext.default: regular
