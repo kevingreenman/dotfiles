@@ -80,7 +80,7 @@ set softtabstop=4
 set ignorecase
 set smartcase
 " tab completion for files/bufferss
-set wildmode=longest,list
+set wildmode=longest,list,full
 set wildmenu
 set mouse+=a " enable mouse mode (scrolling, selection, etc)
 if &term =~ '^screen'
@@ -91,6 +91,8 @@ endif
 "--------------------
 " Misc configurations
 "--------------------
+
+" Keybindings
 
 " unbind keys
 map <C-a> <Nop>
@@ -109,6 +111,13 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
+
+" create new line
+map <C-j> i<CR><Esc>
+
+" shift through tabs
+nnoremap <C-t> :tabnext<CR>
+nnoremap <C-S-t> :tabprevious<CR>
 
 " toggle relative numbering
 nnoremap <C-n> :set rnu!<CR>

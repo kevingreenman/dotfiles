@@ -103,6 +103,8 @@
 
 [user]
 	useConfigOnly = true
+	email = dskoda@mit.edu
+	name = Daniel
 
 [http]
 	cookieFile = ~/.gitcookies
