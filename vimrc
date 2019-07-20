@@ -2,16 +2,15 @@ set nocompatible " not vi compatible
 "--------------
 "" Load pathogen
 "--------------
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect()
-call pathogen#helptags()
+"runtime bundle/vim-pathogen/autoload/pathogen.vim
+"call pathogen#infect()
+"call pathogen#helptags()
 
 "--------------
 " Load pathogen
 "--------------
-"execute pathogen#infect()
+execute pathogen#infect()
 "syntax on
-"filetype plugin indent on
 
 "------------------
 " Syntax and indent
@@ -45,6 +44,7 @@ else
     let g:lightline = {'colorscheme': 'dark'}
     highlight SpellBad cterm=underline
 endif
+
 
 filetype plugin indent on " enable file type detection
 set autoindent
@@ -113,14 +113,11 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
 " create new line
-map <C-j> i<CR><Esc>
+map <C-n> i<CR><Esc>
 
 " shift through tabs
 nnoremap <C-t> :tabnext<CR>
 nnoremap <C-S-t> :tabprevious<CR>
-
-" toggle relative numbering
-nnoremap <C-n> :set rnu!<CR>
 
 " save read-only files
 command -nargs=0 Sudow w !sudo tee % >/dev/null
