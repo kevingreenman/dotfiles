@@ -27,16 +27,16 @@ augroup END
 
 " vim can autodetect this based on $TERM (e.g. 'xterm-256color')
 " but it can be set to force 256 colors
-" set t_Co=256
+ set t_Co=256
 if has('gui_running')
-    colorscheme default
+    colorscheme afterglow
     let g:lightline = {'colorscheme': 'default'}
 elseif &t_Co < 256
-    colorscheme default
+    colorscheme afterglow
     set nocursorline " looks bad in this mode
 else
     set background=dark
-    colorscheme default
+    colorscheme afterglow
     " customized colors
     highlight SignColumn ctermbg=234
     highlight StatusLine cterm=bold ctermfg=245 ctermbg=235
@@ -44,7 +44,6 @@ else
     let g:lightline = {'colorscheme': 'dark'}
     highlight SpellBad cterm=underline
 endif
-
 
 filetype plugin indent on " enable file type detection
 set autoindent
@@ -94,6 +93,8 @@ endif
 
 " Keybindings
 
+let mapleader = ","
+
 " unbind keys
 map <C-a> <Nop>
 map <C-x> <Nop>
@@ -112,15 +113,17 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
-" create new line
+" break line
 map <C-n> i<CR><Esc>
-
-" shift through tabs
-nnoremap <C-t> :tabnext<CR>
-nnoremap <C-S-t> :tabprevious<CR>
 
 " save read-only files
 command -nargs=0 Sudow w !sudo tee % >/dev/null
+
+" clean search history
+nnoremap <Leader><space> :noh<CR>
+
+" paste mode
+set pastetoggle=<Leader>p
 
 "---------------------
 " Local customizations
