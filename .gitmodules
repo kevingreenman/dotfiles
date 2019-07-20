@@ -28,9 +28,6 @@
 [submodule "vim/bundle/vim-afterglow"]
 	path = vim/bundle/vim-afterglow
 	url = https://github.com/danilo-augusto/vim-afterglow.git
-[submodule "vim/bundle/minimalist"]
-	path = vim/bundle/minimalist
-	url = https://github.com/dikiaap/minimalist.git
 [submodule "vim/bundle/vim-flake8"]
 	path = vim/bundle/vim-flake8
 	url = https://github.com/nvie/vim-flake8.git
