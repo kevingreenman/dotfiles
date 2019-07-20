@@ -27,23 +27,10 @@ augroup END
 
 " vim can autodetect this based on $TERM (e.g. 'xterm-256color')
 " but it can be set to force 256 colors
- set t_Co=256
-if has('gui_running')
-    colorscheme afterglow
-    let g:lightline = {'colorscheme': 'default'}
-elseif &t_Co < 256
-    colorscheme afterglow
-    set nocursorline " looks bad in this mode
-else
-    set background=dark
-    colorscheme afterglow
-    " customized colors
-    highlight SignColumn ctermbg=234
-    highlight StatusLine cterm=bold ctermfg=245 ctermbg=235
-    highlight StatusLineNC cterm=bold ctermfg=245 ctermbg=235
-    let g:lightline = {'colorscheme': 'dark'}
-    highlight SpellBad cterm=underline
-endif
+set t_Co=256
+set background=dark
+let g:afterglow_blackout=1
+colorscheme afterglow
 
 filetype plugin indent on " enable file type detection
 set autoindent
