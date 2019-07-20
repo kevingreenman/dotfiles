@@ -10,3 +10,18 @@
 [submodule "tmux/plugins/tmux-prefix-highlight"]
 	path = tmux/plugins/tmux-prefix-highlight
 	url = https://github.com/tmux-plugins/tmux-prefix-highlight.git
+[submodule "vim/bundle/vim-sensible"]
+	path = vim/bundle/vim-sensible
+	url = https://github.com/tpope/vim-sensible.git
+[submodule "vim/bundle/vim-repeat"]
+	path = vim/bundle/vim-repeat
+	url = https://github.com/tpope/vim-repeat.git
+[submodule "vim/bundle/vim-surround"]
+	path = vim/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "vim/bundle/vim-afterglow"]
+	path = vim/bundle/vim-afterglow
+	url = https://github.com/danilo-augusto/vim-afterglow.git
+[submodule "vim/bundle/vim-flake8"]
+	path = vim/bundle/vim-flake8
+	url = https://github.com/nvie/vim-flake8.git
