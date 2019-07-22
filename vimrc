@@ -35,6 +35,30 @@ colorscheme afterglow
 filetype plugin indent on " enable file type detection
 set autoindent
 
+" -------------------------
+"  Configs for Python
+" -------------------------
+
+" Enable folding
+" set foldmethod=indent
+" set foldlevel=99
+nnoremap <Space> za
+let g:SimpylFold_docstring_preview = 1
+
+" PEP8 indentation
+au BufNewFile, BufRead *.py
+    \ set tabstop=4
+    \ set softtabstop=4
+    \ set shiftwidth=4
+    \ set textwidth=79
+    \ set expandtab
+    \ set autoindent
+    \ set fileformat=unix
+
+" Flag unnecessary whitespace
+
+
+
 "---------------------
 " Basic editing config
 "---------------------
@@ -111,6 +135,12 @@ nnoremap <Leader><space> :noh<CR>
 
 " paste mode
 set pastetoggle=<Leader>p
+
+"---------------------
+" PEP 8 for Vim
+"---------------------
+autocmd FileType python map <buffer> <Leader>y :call flake8#Flake8()<CR>
+
 
 "---------------------
 " Local customizations
