@@ -58,7 +58,10 @@ let g:SimpylFold_docstring_preview = 1
 " Set correct encoding
 set encoding=utf-8
 
+"---------------------
 " Syntastic Plugin
+"---------------------
+
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -67,8 +70,16 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
+let g:syntastic_mode_map = {'mode': 'passive'}
 
-" Jedi Python
+" see :h syntastic-loclist-callback
+function! SyntasticCheckHook(errors)
+    if !empty(a:errors)
+        let g:syntastic_loc_list_height = min([len(a:errors), 8])
+    endif
+endfunction
+
+map <Leader>s :SyntasticCheck<CR>
 
 "---------------------
 " Basic editing config
@@ -151,7 +162,6 @@ set pastetoggle=<Leader>p
 " PEP 8 for Vim
 "---------------------
 autocmd FileType python map <buffer> <Leader>y :call flake8#Flake8()<CR>
-
 
 "---------------------
 " Local customizations
