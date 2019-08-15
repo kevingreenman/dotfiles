@@ -35,6 +35,8 @@ colorscheme afterglow
 filetype plugin indent on " enable file type detection
 set autoindent
 
+let mapleader = ","
+
 " -------------------------
 "  Configs for Python
 " -------------------------
@@ -80,6 +82,7 @@ function! SyntasticCheckHook(errors)
 endfunction
 
 map <Leader>s :SyntasticCheck<CR>
+map <Leader>S :SyntasticReset<CR>
 
 "---------------------
 " Basic editing config
@@ -121,12 +124,11 @@ if &term =~ '^screen'
 endif
 
 "--------------------
-" Misc configurations
+" Keybindings
 "--------------------
 
 " Keybindings
 
-let mapleader = ","
 
 " unbind keys
 map <C-a> <Nop>
