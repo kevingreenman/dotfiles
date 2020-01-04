@@ -18,6 +18,10 @@ alias mstorage="sshfs dskoda@eofe4.mit.edu:/pool001/dskoda/data ~/mnt/storage -F
 alias mdw="sshfs dskoda@deepware.mit.edu:/home/dskoda ~/mnt/deepware"
 alias mpool="sshfs dskoda@eofe4.mit.edu:/pool001/dskoda ~/mnt/pool001 -F /home/dskoda/engaging-cluster/linux/config"
 
+# vim aliases
+alias vzf="vim \$(fzf)"
+
 # Slurm aliases
 alias partuse='squeue -p sched_mit_rafagb'
 alias jobsrunning='sacct | grep RUN | grep -v atom | grep -v .ex | wc -l'
+

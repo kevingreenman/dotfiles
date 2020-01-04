@@ -20,6 +20,12 @@ You can make local customizations for some programs by editing these files:
 * `git` : `~/.gitconfig_local`
 * `tmux` : `~/.tmux_local.conf`
 
+
+Installation
+---------------------------
+
+Simply run `install`. If you don't have `fzf` yet, also run `fzf/install`
+
 License
 -------
 

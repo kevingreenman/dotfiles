@@ -12,6 +12,9 @@ set nocompatible " not vi compatible
 execute pathogen#infect()
 "syntax on
 
+" fzf
+set rtp+=~/.fzf
+
 "------------------
 " Syntax and indent
 "------------------
