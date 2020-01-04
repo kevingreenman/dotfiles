@@ -15,6 +15,7 @@
     ~/.config/omf: config/omf
     ~/.config/matplotlib: config/matplotlib
     ~/.fonts: fonts
+    ~/.bash_aliases: bash_aliases
 
 - shell:
     - git submodule sync --recursive
