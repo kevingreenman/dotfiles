@@ -7,7 +7,7 @@ set nocompatible " not vi compatible
 "call pathogen#helptags()
 
 "--------------
-" Load pathogen
+" Load plugin manager
 "--------------
 execute pathogen#infect()
 "syntax on
