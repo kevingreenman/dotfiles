@@ -34,3 +34,6 @@
 [submodule "vim/bundle/jedi-vim"]
 	path = vim/bundle/jedi-vim
 	url = https://github.com/davidhalter/jedi-vim.git
+[submodule "fzf"]
+	path = fzf
+	url = https://github.com/junegunn/fzf.git

@@ -16,6 +16,9 @@
     ~/.config/matplotlib: config/matplotlib
     ~/.fonts: fonts
     ~/.bash_aliases: bash_aliases
+    ~/.bashrc: bashrc
+    ~/.fzf: fzf
+    ~/.fzf.bash: fzf.bash
 
 - shell:
     - git submodule sync --recursive
