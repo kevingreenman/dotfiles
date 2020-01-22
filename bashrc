@@ -141,3 +141,5 @@ export NFF="/home/dskoda/projects/NeuralForceField"
 export PYTHONPATH=$PROJECTSDIR:$HTVSDIR:$DJANGOCHEMDIR:$NFF:$PYTHONPATH
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+set -o vi
