@@ -9,9 +9,9 @@ alias l='ls -CF'
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
-alias cluster4='ssh -F /home/dskoda/engaging-cluster/linux/config eofe4.mit.edu'
-alias cluster5='ssh -F /home/dskoda/engaging-cluster/linux/config eofe5.mit.edu'
-alias cluster7='ssh -F /home/dskoda/engaging-cluster/linux/config eofe7.mit.edu'
+alias cluster4='ssh -F /home/dskoda/.ssh/engaging-cluster/linux/config eofe4.mit.edu'
+alias cluster5='ssh -F /home/dskoda/.ssh/engaging-cluster/linux/config eofe5.mit.edu'
+alias cluster7='ssh -F /home/dskoda/.ssh/engaging-cluster/linux/config eofe7.mit.edu'
 
 alias mcl="sshfs dskoda@eofe4.mit.edu: ~/mnt/cluster -F /home/dskoda/engaging-cluster/linux/config"
 alias mstorage="sshfs dskoda@eofe4.mit.edu:/pool001/dskoda/data ~/mnt/storage -F /home/dskoda/engaging-cluster/linux/config"
