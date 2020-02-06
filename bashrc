@@ -143,3 +143,9 @@ export PYTHONPATH=$PROJECTSDIR:$HTVSDIR:$DJANGOCHEMDIR:$NFF:$PYTHONPATH
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 set -o vi
+
+export GULP_DIR="/home/dskoda/packages/gulp"
+export GULP_LIB="$GULP_DIR/Libraries"
+export GULP_DOC="$GULP_DIR/Docs"
+export GULP="$GULP_DIR/Src/gulp"
+export ASE_GULP_COMMAND="$GULP < PREFIX.gin > PREFIX.got"
