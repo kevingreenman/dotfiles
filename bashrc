@@ -127,11 +127,12 @@ unset __conda_setup
 export PROJECTSDIR="/home/dskoda/projects"
 export HTVSDIR="$PROJECTSDIR/htvs"
 export DJANGOCHEMDIR="$HTVSDIR/djangochem"
+export MOLDOCKDIR="$PROJECTSDIR/moldocker"
 export CLUSTER="$HOME/mnt/cluster"
 export LOGDIR="$HOME/logs"
 export NFF="$PROJECTSDIR/NeuralForceField"
 
-export PYTHONPATH=$PROJECTSDIR:$HTVSDIR:$DJANGOCHEMDIR:$NFF:$PYTHONPATH
+export PYTHONPATH=$PROJECTSDIR:$HTVSDIR:$DJANGOCHEMDIR:$NFF:$PYTHONPATH:$MOLDOCKDIR
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
@@ -140,3 +141,27 @@ export GULP_LIB="$GULP_DIR/Libraries"
 export GULP_DOC="$GULP_DIR/Docs"
 export GULP="$GULP_DIR/Src/gulp"
 export ASE_GULP_COMMAND="$GULP < PREFIX.gin > PREFIX.got"
+
+
+SSH_ENV="$HOME/.ssh/environment"
+
+function start_agent {
+     echo "Initialising new SSH agent..."
+     /usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"
+     echo succeeded
+     chmod 600 "${SSH_ENV}"
+     . "${SSH_ENV}" > /dev/null
+     /usr/bin/ssh-add;
+}
+
+# Source SSH settings, if applicable
+
+if [ -f "${SSH_ENV}" ]; then
+     . "${SSH_ENV}" > /dev/null
+     #ps ${SSH_AGENT_PID} doesn't work under cywgin
+     ps -ef | grep ${SSH_AGENT_PID} | grep ssh-agent$ > /dev/null || {
+         start_agent;
+     }
+else
+     start_agent;
+fi
