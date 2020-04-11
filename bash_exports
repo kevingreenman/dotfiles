@@ -1,0 +1,19 @@
+#!/bin/bash
+# Environment variables
+export PROJECTSDIR="$HOME/projects"
+export HTVSDIR="$PROJECTSDIR/htvs"
+export DJANGOCHEMDIR="$HTVSDIR/djangochem"
+export MOLDOCKDIR="$PROJECTSDIR/moldocker"
+export CLUSTER="$HOME/mnt/cluster"
+export LOGDIR="$HOME/logs"
+export NFF="$PROJECTSDIR/NeuralForceField"
+
+export PYTHONPATH=$PROJECTSDIR:$HTVSDIR:$DJANGOCHEMDIR:$NFF:$PYTHONPATH:$MOLDOCKDIR
+
+export PACKAGESDIR="$HOME/packages"
+export GULP_DIR="$PACKAGESDIR/gulp"
+export GULP_LIB="$GULP_DIR/Libraries"
+export GULP_DOC="$GULP_DIR/Docs"
+export GULP="$GULP_DIR/Src/gulp"
+
+export ASE_GULP_COMMAND="$GULP < PREFIX.gin > PREFIX.got"

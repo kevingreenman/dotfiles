@@ -75,25 +75,19 @@ esac
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
-
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
 fi
 
-# colored GCC warnings and errors
-#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+if [ -f ~/.bash_exports ]; then
+    . ~/.bash_exports
+fi
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
+fi
+
+if [ -f ~/.bashrc_local ]; then
+    . ~/.bashrc_local
 fi
 
 # enable programmable completion features (you don't need to enable
@@ -123,26 +117,6 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 
-# Environment variables
-export PROJECTSDIR="/home/dskoda/projects"
-export HTVSDIR="$PROJECTSDIR/htvs"
-export DJANGOCHEMDIR="$HTVSDIR/djangochem"
-export MOLDOCKDIR="$PROJECTSDIR/moldocker"
-export CLUSTER="$HOME/mnt/cluster"
-export LOGDIR="$HOME/logs"
-export NFF="$PROJECTSDIR/NeuralForceField"
-
-export PYTHONPATH=$PROJECTSDIR:$HTVSDIR:$DJANGOCHEMDIR:$NFF:$PYTHONPATH:$MOLDOCKDIR
-
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
-export GULP_DIR="/home/dskoda/packages/gulp"
-export GULP_LIB="$GULP_DIR/Libraries"
-export GULP_DOC="$GULP_DIR/Docs"
-export GULP="$GULP_DIR/Src/gulp"
-export ASE_GULP_COMMAND="$GULP < PREFIX.gin > PREFIX.got"
-
-
 SSH_ENV="$HOME/.ssh/environment"
 
 function start_agent {
@@ -165,3 +139,5 @@ if [ -f "${SSH_ENV}" ]; then
 else
      start_agent;
 fi
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
