@@ -5,7 +5,7 @@ SETUVAR --export LSCOLORS:gxfxbEaEBxxEhEhBaDaCaD
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_init_3_x:\x1d
-SETUVAR bookmarks:/Users/dskoda\x1e/Users/dskoda/Projects/databases/zeolites/known/cif\x1e/tmp\x1e/Users/dskoda/Projects/databases/zeolites\x1e/Users/dskoda/MIT/year2/3\x2e24/assignments/term_paper/bilbao\x1e/Users/dskoda/Dropbox\x20\x28MIT\x29/MIT/2019\x1e/Users/dskoda/MIT/2019/spring/article_v3/figs_v3/deepware\x1e/Users/dskoda/MIT/2019/spring/article_v3/figs_v2/deepware\x1e/Users/dskoda/Projects/dotfiles\x1e/Users/dskoda/Projects\x1e/Users/dskoda/Dropbox\x20\x28MIT\x29/research/references
+SETUVAR bookmarks:/Users/dskoda/Desktop\x1e/Users/dskoda/Dropbox\x20\x28MIT\x29/LaMnO3_input_files\x1e/Users/dskoda/Projects/databases/zeolites/known/cif\x1e/tmp\x1e/Users/dskoda/Projects/databases/zeolites\x1e/Users/dskoda/MIT/year2/3\x2e24/assignments/term_paper/bilbao\x1e/Users/dskoda/Dropbox\x20\x28MIT\x29/MIT/2019\x1e/Users/dskoda/MIT/2019/spring/article_v3/figs_v3/deepware\x1e/Users/dskoda/MIT/2019/spring/article_v3/figs_v2/deepware\x1e/Users/dskoda/Projects/dotfiles\x1e/Users/dskoda/Projects\x1e/Users/dskoda/Dropbox\x20\x28MIT\x29/research/references
 SETUVAR dangerous_colors:000000\x1e333333\x1e666666\x1effffff\x1effff00\x1eff6600\x1eff0000\x1eff0033\x1e3300ff\x1e00aaff\x1e00ffff\x1e00ff00
 SETUVAR dangerous_cursors:\x5c033\x5d12\x3b\x2300aaff\x5c007\x1e\x5c033\x5d12\x3b\x23ffff00\x5c007\x1e\x5c033\x5d12\x3b\x23ff0033\x5c007\x1e\x5c033\x5d12\x3b\x233300ff\x5c007
 SETUVAR dangerous_day:000000\x1e333333\x1e666666\x1effffff\x1effff00\x1eff6600\x1eff0000\x1eff0033\x1e3300ff\x1e00aaff\x1e00ffff\x1e00ff00
@@ -43,3 +43,4 @@ SETUVAR fish_pager_color_completion:normal
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
+SETUVAR fish_user_paths:/Users/dskoda/projects/dotfiles/fzf/bin

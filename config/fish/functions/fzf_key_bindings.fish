@@ -1,0 +1,1 @@
+/Users/dskoda/projects/dotfiles/fzf/shell/key-bindings.fish
