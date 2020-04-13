@@ -11,10 +11,9 @@
     ~/.tmux: tmux
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
-    ~/.config/fish: config/fish
-    ~/.config/omf: config/omf
     ~/.config/matplotlib: config/matplotlib
     ~/.fonts: fonts
+    ~/.bash_exports: bash_exports
     ~/.bash_aliases: bash_aliases
     ~/.bashrc: bashrc
     ~/.fzf: fzf
