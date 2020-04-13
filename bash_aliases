@@ -26,6 +26,11 @@ alias mdw="sshfs dskoda@deepware.mit.edu:/home/dskoda ~/mnt/deepware"
 
 # vim aliases
 alias vzf="vim \$(fzf)"
+alias v="vim"
+
+# Python aliases
+alias p="python3"
+alias unittest="p -m unittest discover"
 
 # Slurm aliases
 alias partuse='squeue -p sched_mit_rafagb'
