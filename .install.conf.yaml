@@ -8,6 +8,7 @@
     ~/.tmux.conf: tmux.conf
     ~/.vimrc: vimrc
     ~/.vim: vim
+    ~/.config/nvim: nvim
     ~/.tmux: tmux
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global

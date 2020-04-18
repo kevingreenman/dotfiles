@@ -25,6 +25,10 @@ alias mpool="sshfs dskoda@eofe4.mit.edu:/pool001/dskoda ~/mnt/pool001 -F /home/d
 alias mdw="sshfs dskoda@deepware.mit.edu:/home/dskoda ~/mnt/deepware"
 
 # vim aliases
+# replaces vim by nvim if the latter exists
+type nvim >/dev/null 2>&1 && {
+    alias vim="nvim"
+}
 alias vzf="vim \$(fzf)"
 alias v="vim"
 
