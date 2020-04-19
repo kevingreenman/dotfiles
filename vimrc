@@ -1,16 +1,20 @@
 set nocompatible " not vi compatible
-"--------------
-"" Load pathogen
-"--------------
-"runtime bundle/vim-pathogen/autoload/pathogen.vim
-"call pathogen#infect()
-"call pathogen#helptags()
 
-"--------------
-" Load plugin manager
-"--------------
-execute pathogen#infect()
-"syntax on
+" Vim-Plug
+call plug#begin('~/.vim/plugged')
+
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'preservim/nerdtree'
+Plug 'vim-syntastic/syntastic'
+Plug 'danilo-augusto/vim-afterglow'
+Plug 'danilo-augusto/vim-afterglow'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-sensible'
+Plug 'tmhedberg/SimpylFold'
+
+call plug#end()
 
 "------------------
 " Syntax and indent
