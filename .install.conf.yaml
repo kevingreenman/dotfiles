@@ -14,16 +14,13 @@
     ~/.gitignore_global: gitignore_global
     ~/.config/matplotlib: config/matplotlib
     ~/.fonts: fonts
-    ~/.bash_exports: bash_exports
-    ~/.bash_aliases: bash_aliases
-    ~/.bashrc: bashrc
+    ~/.bash_exports: bash/bash_exports
+    ~/.bash_aliases: bash/bash_aliases
+    ~/.bashrc: bash/bashrc
     ~/.fzf: fzf
-    ~/.fzf.bash: fzf.bash
+    ~/.fzf.bash: bash/fzf.bash
 
 - shell:
     - git submodule sync --recursive
     - git submodule update --init --recursive
-    - >
-      git clean -fdx -f
-      vim/bundle/
     - fc-cache -vf
