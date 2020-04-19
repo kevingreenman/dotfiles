@@ -1,4 +1,8 @@
 #!/bin/bash
+# Default editor
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 # Environment variables
 export PROJECTSDIR="$HOME/projects"
 export HTVSDIR="$PROJECTSDIR/htvs"
