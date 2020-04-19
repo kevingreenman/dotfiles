@@ -16,3 +16,7 @@ brew tap bramstein/webfonttools
 brew install sfnt2woff
 brew install sfnt2woff-zopfli
 brew install woff2
+
+# sensible tools
+brew install bat
+brew install neovim
