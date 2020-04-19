@@ -1,6 +1,6 @@
 #!/bin/bash
 # Default editor
-export VISUAL=vim
+export VISUAL=nvim
 export EDITOR="$VISUAL"
 
 # Environment variables
