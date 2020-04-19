@@ -12,9 +12,6 @@ set nocompatible " not vi compatible
 execute pathogen#infect()
 "syntax on
 
-" fzf
-set rtp+=~/.fzf
-
 "------------------
 " Syntax and indent
 "------------------
@@ -164,11 +161,6 @@ nnoremap <Leader><space> :noh<CR>
 set pastetoggle=<Leader>p
 
 "---------------------
-" PEP 8 for Vim
-"---------------------
-autocmd FileType python map <buffer> <Leader>y :call flake8#Flake8()<CR>
-
-"---------------------
 " Local customizations
 "---------------------
 
@@ -180,5 +172,9 @@ endif
 
 " nerdtree
 filetype plugin indent on
-map <C-l> :NERDTreeToggle<CR>
+map <Leader>d :NERDTreeToggle<CR>
+
+" fzf
+set rtp+=~/.fzf
+map <Leader>f :Files<CR>
 
