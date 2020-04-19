@@ -13,6 +13,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-sensible'
 Plug 'tmhedberg/SimpylFold'
+Plug 'davidhalter/jedi-vim'
+Plug 'ervandew/supertab'
 
 call plug#end()
 
@@ -38,31 +40,24 @@ colorscheme afterglow
 
 filetype plugin indent on " enable file type detection
 set autoindent
+set encoding=utf-8
 
 let mapleader = ","
 
 " -------------------------
-"  Configs for Python
+"  SimpylFold
 " -------------------------
 
 " Enable folding
-" set foldmethod=indent
-" set foldlevel=99
 nnoremap <Space> za
 let g:SimpylFold_docstring_preview = 1
 
-" PEP8 indentation
-"au BufNewFile, BufRead *.py
-"    \ set tabstop=4
-"    \ set softtabstop=4
-"    \ set shiftwidth=4
-"    \ set textwidth=79
-"    \ set expandtab
-"    \ set autoindent
-"    \ set fileformat=unix
 
-" Set correct encoding
-set encoding=utf-8
+"---------------------
+" Jedi-VIM
+"---------------------
+let g:jedi#use_splits_not_buffers = "right"
+let g:jedi#popup_on_dot = 0
 
 "---------------------
 " Syntastic Plugin
@@ -176,7 +171,7 @@ endif
 
 " nerdtree
 filetype plugin indent on
-map <Leader>d :NERDTreeToggle<CR>
+map <Leader>t :NERDTreeToggle<CR>
 
 " fzf
 set rtp+=~/.fzf
