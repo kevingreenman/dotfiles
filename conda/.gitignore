@@ -1,6 +1,0 @@
-*
-!.gitignore
-!setup_conda.sh
-!pip_requirements.txt
-!setup_with_srun.sh
-conda_installer.sh
