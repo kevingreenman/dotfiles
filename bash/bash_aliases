@@ -26,7 +26,4 @@ alias v="vim"
 alias p="python3"
 alias unittest="p -m unittest discover"
 
-# Slurm aliases
-alias partuse='squeue -p sched_mit_rafagb'
-alias jobsrunning='sacct | grep RUN | grep -v atom | grep -v .ex | wc -l'
 
