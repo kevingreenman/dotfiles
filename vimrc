@@ -3,7 +3,7 @@ set nocompatible " not vi compatible
 " Vim-Plug
 call plug#begin('~/.vim/plugged')
 
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdtree'
 Plug 'vim-syntastic/syntastic'
