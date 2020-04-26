@@ -2,14 +2,9 @@ Dotfiles
 ========
 
 After cloning this repo, run `install` to automatically set up the development
-environment. Note that the install script is idempotent: it can safely be run
-multiple times.
+environment.
 
-For the color scheme to look right, you will also need terminal-specific
-support. The configuration for that, along with a whole bunch of other
-machine-specific configuration, is located in [dotfiles_local][dotfiles_local].
-
-Dotfiles uses [Dotbot][dotbot] for installation.
+Dotfiles uses [Dotbot][dotbot] for installation. Some of these dotfiles were based on [anishathalye's dotfiles][anish_dotfiles].
 
 Making Local Customizations
 ---------------------------
@@ -33,5 +28,5 @@ Copyright (c) 2019- Daniel Schwalbe-Koda. Released under the MIT License. See
 [LICENSE.md][license] for details.
 
 [dotbot]: https://github.com/anishathalye/dotbot
-[dotfiles_local]: https://github.mit.edu/dskoda/dotfiles_local
+[anish_dotfiles]: https://github.com/anishathalye/dotfiles 
 [license]: LICENSE.md
