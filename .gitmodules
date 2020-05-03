@@ -16,6 +16,3 @@
 [submodule "fzf"]
 	path = fzf
 	url = https://github.com/junegunn/fzf.git
-[submodule "jupyter/jupyter-vim-binding"]
-	path = jupyter/nbextensions/jupyter-vim-binding
-	url = git@github.com:lambdalisue/jupyter-vim-binding.git

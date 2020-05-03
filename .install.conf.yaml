@@ -4,10 +4,6 @@
 
 - clean: ['~']
 
-- create:
-    - ~/.local/share/jupyter
-    - ~/.jupyter/nbconfig
-
 - link:
     ~/.tmux.conf: tmux.conf
     ~/.vimrc: vimrc
