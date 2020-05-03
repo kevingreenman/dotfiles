@@ -8,8 +8,9 @@ else
 fi
 export EDITOR="$VISUAL"
 
-# Environment variables
 export PROJECTSDIR="$HOME/projects"
+
+# Personal projects
 export HTVSDIR="$PROJECTSDIR/htvs"
 export DJANGOCHEMDIR="$HTVSDIR/djangochem"
 export MOLDOCKDIR="$PROJECTSDIR/moldocker"
@@ -18,6 +19,9 @@ export LOGDIR="$HOME/logs"
 export NFF="$PROJECTSDIR/NeuralForceField"
 
 export PYTHONPATH=$PROJECTSDIR:$HTVSDIR:$DJANGOCHEMDIR:$NFF:$MOLDOCKDIR:$PYTHONPATH
+export MPLCONFIGDIR="$HOME/.config/matplotlib"
 
 export PACKAGESDIR="$HOME/packages"
+export DOTFILES="$PROJECTSDIR/dotfiles"
+export DOTLOCAL="$PROJECTSDIR/dotfiles_local"
 
