@@ -175,4 +175,6 @@ map <Leader>t :NERDTreeToggle<CR>
 " fzf
 set rtp+=~/.fzf
 map <Leader>f :Files<CR>
+map <Leader>b :Buffers<CR>
+map <Leader>g :GFiles<CR>
 
