@@ -27,4 +27,6 @@ alias p="python3"
 alias ptest="p -m unittest"
 alias unittest="p -m unittest discover"
 
-
+prettyjson() {
+    python -m json.tool "$1"
+}
