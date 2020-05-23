@@ -79,8 +79,8 @@ function! SyntasticCheckHook(errors)
     endif
 endfunction
 
-map <Leader>s :SyntasticCheck<CR>
-map <Leader>S :SyntasticReset<CR>
+map <Leader>c :SyntasticCheck<CR>
+map <Leader>r :SyntasticReset<CR>
 
 "---------------------
 " Basic editing config
