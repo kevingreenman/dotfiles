@@ -17,6 +17,7 @@ export MOLDOCKDIR="$PROJECTSDIR/moldocker"
 export CLUSTER="$HOME/mnt/cluster"
 export LOGDIR="$HOME/logs"
 export NFF="$PROJECTSDIR/NeuralForceField"
+export confgenpath="$HTVSDIR/confgen"
 
 export DSKRC="$PROJECTSDIR/dskrc"
 export DSK_PYTHON="$DSKRC/python/inits"
