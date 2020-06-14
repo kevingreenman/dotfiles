@@ -30,3 +30,5 @@ alias unittest="p -m unittest discover"
 prettyjson() {
     python -m json.tool "$1"
 }
+
+alias ppath='echo $PATH | tr ":" "\n"'
