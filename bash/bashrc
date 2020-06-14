@@ -73,18 +73,9 @@ if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 fi
 
-
-if [ -f ~/.bash_exports ]; then
-    . ~/.bash_exports
-fi
-
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
-
-if [ -f ~/.bashrc_local ]; then
-    . ~/.bashrc_local
-fi
+[ -f ~/.bash_exports ] && . ~/.bash_exports
+[ -f ~/.bash_aliases ] && . ~/.bash_aliases
+[ -f ~/.bashrc_local ] && . ~/.bashrc_local
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
