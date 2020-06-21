@@ -8,9 +8,8 @@ else
 fi
 export EDITOR="$VISUAL"
 
-export PROJECTSDIR="$HOME/projects"
-
 # Personal projects
+export PROJECTSDIR="$HOME/projects"
 export HTVSDIR="$PROJECTSDIR/htvs"
 export DJANGOCHEMDIR="$HTVSDIR/djangochem"
 export MOLDOCKDIR="$PROJECTSDIR/moldocker"
