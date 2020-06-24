@@ -16,12 +16,13 @@ export MOLDOCKDIR="$PROJECTSDIR/moldocker"
 export CLUSTER="$HOME/mnt/cluster"
 export LOGDIR="$HOME/logs"
 export NFF="$PROJECTSDIR/NeuralForceField"
+export GULPY="$PROJECTSDIR/gulpy"
 export confgenpath="$HTVSDIR/confgen"
 
 export DSKRC="$PROJECTSDIR/dskrc"
 export DSK_PYTHON="$DSKRC/python/inits"
 
-export PYTHONPATH=$HTVSDIR:$DJANGOCHEMDIR:$NFF:$MOLDOCKDIR:$DSK_PYTHON:$PROJECTSDIR
+export PYTHONPATH=$HTVSDIR:$DJANGOCHEMDIR:$NFF:$MOLDOCKDIR:$GULPY:$DSK_PYTHON:$PROJECTSDIR:$PYTHONPATH
 export MPLCONFIGDIR="$HOME/.config/matplotlib"
 
 export PACKAGESDIR="$HOME/packages"
