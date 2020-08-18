@@ -13,7 +13,7 @@ export PROJECTSDIR="$HOME/projects"
 export HTVSDIR="$PROJECTSDIR/htvs"
 export DJANGOCHEMDIR="$HTVSDIR/djangochem"
 export CHEMCONFIGS="$HTVSDIR/chemconfigs"
-export MOLDOCKDIR="$PROJECTSDIR/moldocker"
+export VOIDDIR="$PROJECTSDIR/VOID"
 export CLUSTER="$HOME/mnt/cluster"
 export LOGDIR="$HOME/logs"
 export NFF="$PROJECTSDIR/NeuralForceField"
@@ -23,7 +23,7 @@ export confgenpath="$HTVSDIR/confgen"
 export DSKRC="$PROJECTSDIR/dskrc"
 export DSK_PYTHON="$DSKRC/python/inits"
 
-export PYTHONPATH=$HTVSDIR:$DJANGOCHEMDIR:$GULPY:$NFF:$MOLDOCKDIR:$DSK_PYTHON:$PROJECTSDIR
+export PYTHONPATH=$HTVSDIR:$DJANGOCHEMDIR:$GULPY:$NFF:$VOIDDIR:$DSK_PYTHON:$PROJECTSDIR
 export MPLCONFIGDIR="$HOME/.config/matplotlib"
 
 export PACKAGESDIR="$HOME/packages"
