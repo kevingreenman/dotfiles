@@ -19,12 +19,13 @@ export CLUSTER="$HOME/mnt/cluster"
 export LOGDIR="$HOME/logs"
 export NFF="$PROJECTSDIR/NeuralForceField"
 export GULPY="$PROJECTSDIR/gulpy"
+export ROBUST="$PROJECTSDIR/robust"
 export confgenpath="$HTVSDIR/confgen"
 
 export DSKRC="$PROJECTSDIR/dskrc"
 export DSK_PYTHON="$DSKRC/python/inits"
 
-export PYTHONPATH=$HTVSDIR:$DJANGOCHEMDIR:$GULPY:$NFF:$VOIDDIR:$DSK_PYTHON:$PROJECTSDIR
+export PYTHONPATH=$HTVSDIR:$DJANGOCHEMDIR:$ROBUST:$GULPY:$NFF:$VOIDDIR:$DSK_PYTHON:$PROJECTSDIR
 export MPLCONFIGDIR="$HOME/.config/matplotlib"
 
 export PACKAGESDIR="$HOME/packages"
