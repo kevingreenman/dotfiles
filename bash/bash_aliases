@@ -34,3 +34,40 @@ prettyjson() {
 }
 
 alias ppath='echo $PATH | tr ":" "\n"'
+
+# Miscellaneous aliases
+
+alias o="less"
+alias e="emacs"
+alias v="vim"
+alias jn="jupyter notebook"
+alias oa="open -a"
+alias vzr="vim ~/.zshrc"
+alias szr=". ~/.zshrc"
+alias julia="exec '/Applications/Julia-1.5.app/Contents/Resources/julia/bin/julia'"
+
+# Accessing Remote Machines
+alias flux="ssh kpgreenm@flux-login.arc-ts.umich.edu"
+alias nersce="ssh kpgreenm@edison.nersc.gov"
+alias nerscc="ssh kpgreenm@cori.nersc.gov"
+alias nanoxfer="sftp kpgreenm@nanoHUB.org"
+alias athena="ssh kpg@athena.dialup.mit.edu"
+alias eng4="ssh -F $HOME/.ssh/eofe-cluster/linux/config eofe4.mit.edu"
+alias eng5="ssh -F $HOME/.ssh/eofe-cluster/linux/config eofe5.mit.edu"
+alias eng7="ssh -F $HOME/.ssh/eofe-cluster/linux/config eofe7.mit.edu"
+alias deep="ssh kpg@deepware.mit.edu"
+alias lamb="ssh kpg@lambdamat.mit.edu"
+alias rlamb="ssh -R 52623:localhost:52623 kpg@lambdamat.mit.edu"
+alias hart="ssh kpg@hartree.mit.edu"
+alias fock="ssh kpg@fock.mit.edu"
+alias super="ssh kgreenman@txe1-login.mit.edu"
+alias rmg="ssh kpg@rmg.mit.edu"
+alias pharos="ssh kpg@pharos.mit.edu"
+alias rain="ssh -Y kpg@rainier.mit.edu"
+alias matt="ssh -Y kpg@matterhorn.mit.edu"
+alias xsede="ssh kpg1@login.xsede.org"
+alias comet="ssh kpg1@comet.sdsc.xsede.org"
+
+alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
+

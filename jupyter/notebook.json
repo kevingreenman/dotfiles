@@ -6,5 +6,10 @@
     "cm_config": {
       "lineNumbers": true
     }
+  },
+  "InlineBackend": {
+    "print_figure_kwargs": {
+      'facecolor' : "w"
+    }
   }
 }
