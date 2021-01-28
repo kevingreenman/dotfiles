@@ -9,23 +9,24 @@ else
 fi
 export EDITOR="$VISUAL"
 
+# Fuzzy Finder
+export FZF_DEFAULT_OPS="--extended"
+
 # Personal projects
-export PROJECTSDIR="$HOME/projects"
+export PROJECTSDIR="$HOME"
+export CHEMPROPDIR="$PROJECTSDIR/chemprop"
+export SMILESDIR="$PROJECTSDIR/chemdata/smiles/fluodye"
+export NOTEBOOKSDIR="$PROJECTSDIR/chemdata/notebooks/kpg"
+export SCRIPTSDIR="$PROJECTSDIR/chemdata/scripts"
 export HTVSDIR="$PROJECTSDIR/htvs"
 export DJANGOCHEMDIR="$HTVSDIR/djangochem"
 export CHEMCONFIGS="$HTVSDIR/chemconfigs"
-export VOIDDIR="$PROJECTSDIR/VOID"
 export CLUSTER="$HOME/mnt/cluster"
 export LOGDIR="$HOME/logs"
 export NFF="$PROJECTSDIR/NeuralForceField"
-export GULPY="$PROJECTSDIR/gulpy"
-export ROBUST="$PROJECTSDIR/robust"
 export confgenpath="$HTVSDIR/confgen"
 
-export DSKRC="$PROJECTSDIR/dskrc"
-export DSK_PYTHON="$DSKRC/python/inits"
-
-export PYTHONPATH=$HTVSDIR:$DJANGOCHEMDIR:$ROBUST:$GULPY:$NFF:$VOIDDIR:$DSK_PYTHON:$PROJECTSDIR
+export PYTHONPATH=$HTVSDIR:$DJANGOCHEMDIR:$NFF:$PROJECTSDIR
 export MPLCONFIGDIR="$HOME/.config/matplotlib"
 
 export PACKAGESDIR="$HOME/packages"

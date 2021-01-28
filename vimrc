@@ -19,8 +19,8 @@ call plug#begin('~/.vim/plugged')
 "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdtree'
-Plug 'vim-syntastic/syntastic'
-Plug 'danilo-augusto/vim-afterglow'
+"Plug 'vim-syntastic/syntastic'
+"Plug 'danilo-augusto/vim-afterglow'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-sensible'
@@ -90,8 +90,8 @@ augroup END
 " but it can be set to force 256 colors
 set t_Co=256
 set background=dark
-let g:afterglow_blackout=1
-colorscheme afterglow
+"let g:afterglow_blackout=1
+"colorscheme afterglow
 
 filetype plugin indent on " enable file type detection
 set autoindent
@@ -117,26 +117,26 @@ let g:jedi#popup_on_dot = 0
 "---------------------
 " Syntastic Plugin
 "---------------------
-
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
-let g:syntastic_mode_map = {'mode': 'passive'}
-
-" see :h syntastic-loclist-callback
-function! SyntasticCheckHook(errors)
-    if !empty(a:errors)
-        let g:syntastic_loc_list_height = min([len(a:errors), 8])
-    endif
-endfunction
-
-map <Leader>c :SyntasticCheck<CR>
-map <Leader>r :SyntasticReset<CR>
+"
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+"
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 0
+"let g:syntastic_check_on_wq = 0
+"let g:syntastic_mode_map = {'mode': 'passive'}
+"
+"" see :h syntastic-loclist-callback
+"function! SyntasticCheckHook(errors)
+    "if !empty(a:errors)
+        "let g:syntastic_loc_list_height = min([len(a:errors), 8])
+    "endif
+"endfunction
+"
+"map <Leader>c :SyntasticCheck<CR>
+"map <Leader>r :SyntasticReset<CR>
 
 "---------------------
 " Basic editing config

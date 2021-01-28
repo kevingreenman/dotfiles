@@ -113,3 +113,7 @@
 # Allow local customizations in the .gitconfig_local file
 [include]
 	path = ~/.gitconfig_local
+
+[user]
+	email = kpg@mit.edu
+	name = Kevin Greenman
