@@ -141,7 +141,7 @@ export LSCOLORS=exfxfeaeBxxehehbadacea
 
 bindkey -v
 
-if [ -f  ~/.shell_local]; then
+if [ -f  ~/.shell_local ]; then
     source ~/.shell_local
 fi
 
