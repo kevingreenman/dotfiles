@@ -14,8 +14,7 @@ You can make local customizations for some programs by editing these files:
 * `vim` : `~/.vimrc_local`
 * `git` : `~/.gitconfig_local`
 * `tmux` : `~/.tmux_local.conf`
-* `zsh / bash` : `~/.shell_local_before` run first
-* `zsh / bash` : `~/.shell_local_after` run last
+* `zsh / bash` : `~/.shell_local`
 
 
 Installation
