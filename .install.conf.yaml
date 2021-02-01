@@ -21,6 +21,7 @@
     ~/.local/share/jupyter/nbextensions: jupyter/nbextensions
     ~/Library/Jupyter/nbextensions: jupyter/nbextensions
     ~/bin: bin
+    ~/.zshrc: zshrc
 
 - shell:
     - git submodule sync --recursive
