@@ -128,6 +128,7 @@ alias xsede="ssh kpg1@login.xsede.org"
 alias comet="ssh kpg1@comet.sdsc.xsede.org"
 alias satori="ssh kpg@satori-login-001.mit.edu"
 alias satori-xfer="ssh kpg@satori-login-002.mit.edu"
+alias cori="ssh kpgreenm@cori.nersc.gov"
 
 fpath=(/usr/local/share/zsh-completions $fpath)
 
